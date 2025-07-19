@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components/native';
 import { useCart, CartContext } from '../context/CartContext';
 import { useContext } from 'react';
+import { TouchableOpacity } from 'react-native';
 
 export default function QuantityButton({ product }) {
   const { cart, dispatch } = useCart();
@@ -36,12 +37,16 @@ export default function QuantityButton({ product }) {
   }
 
   return (
-    <QuantityControlButton disabled={quantity >= 20}>
+    <QuantityControlButton disabled={quantity > 20}>
       <ControlText onPress={() => decrease(5)}>{'<<'}</ControlText>
       <ControlText onPress={() => decrease(1)}>-</ControlText>
       <QtyText>{quantity}</QtyText>
-      <ControlText onPress={() => increase(1)}>+</ControlText>
-      <ControlText onPress={() => increase(5)}>{'>>'}</ControlText>
+      <TouchableOpacity onPress={() => increase(1)} activeOpacity={0.7}>
+        <ControlText style={{ opacity: quantity >= 20 ? 0.4 : 1 }}>+</ControlText>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => increase(5)} activeOpacity={0.7}>
+        <ControlText style={{ opacity: quantity >= 20 ? 0.4 : 1 }}>{'>>'}</ControlText>
+      </TouchableOpacity>
     </QuantityControlButton>
   );
 }
