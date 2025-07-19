@@ -17,42 +17,36 @@ const data = [
     name: 'Maha PPC Cement, 50 Kg Bag',
     price: 370,
     image: 'https://www.cementexchange.in/media/catalog/product/cache/49d0b6f0ca58df8c26cb194b285c3edb/m/a/maha-ppc-cement.jpg',
-    buttonLabel: '«  -  15  +  »',
   },
   {
     id: '2',
     name: 'Priya PPC Cement, 50 Kg Bag',
     price: 370,
     image: 'https://home-run.co/cdn/shop/files/Priya_OPC_53_Grade_Cement_50_Kg_Bag_new.webp?v=1740487089&width=1445',
-    buttonLabel: 'Add',
   },
   {
     id: '3',
     name: 'Ultratech PPC Cement, 50 Kg Bag',
     price: 420,
     image: 'https://www.infinitysquare.in/cdn/shop/products/Ultratech.png?v=1641719781',
-    buttonLabel: 'Add',
   },
   {
     id: '4',
     name: 'Birla White Cement',
     price: 40,
     image: 'https://hanumanbuilders.com/wp-content/uploads/2024/05/Birla-25-KG-50-KG-White-Cement-2-1.jpg.webp',
-    buttonLabel: '3 Options',
   },
   {
     id: '5',
     name: 'Ramco Supergrade PPC Cement, 50 kg Bag',
     price: 405,
     image: 'https://tiimg.tistatic.com/fp/1/008/353/grade-43-limestone-acid-proof-ramco-cement-198.jpg',
-    buttonLabel: '3 Options',
   },
   {
     id: '6',
     name: 'Birla Super OPC 53 Grade Cement, 50 Kg Bag',
     price: 465,
     image: 'https://home-run.co/cdn/shop/files/Birla_Super_OPC_53_Grade_Cement_50_Kg_Bag.webp?v=1740486830&width=1445',
-    buttonLabel: '3 Options',
   }
 ];
 
